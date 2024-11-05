@@ -1,0 +1,6 @@
+ul>li:nth-child(odd)::marker{
+    content: "❤️ ";
+}
+ul>li:nth-child(even)::marker{
+    content: "🖤 ";
+}
