@@ -1,0 +1,34 @@
+/* 1 Direct child Selector (it will work on direct child which further does not have child.)
+article>p{
+    color: red;
+}
+
+article>main>p{
+    color: purple;
+} 
+*/
+
+/* 2 Immediate Sibling Selector (+) (it will target the just after these selector) 
+article+section{
+    color: red;
+} */
+
+/* 3 General Sibling Selector (~)( it will target all the sebling after them)
+article~section{
+    color: blue;
+} 
+*/
+
+/* 4 Descendent Selector (space between two Selector) ( it will target direct and indirect child)  
+article p{
+    color: orange;
+} 
+*/
+
+article+section>aside>p{
+    color: red;
+}
+
+article+section+section>main{
+    color: magenta;
+}
