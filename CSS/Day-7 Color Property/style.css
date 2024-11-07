@@ -1,0 +1,14 @@
+div{
+    color: red;
+    
+    /* color: #00ffff; 
+       color: #ff00ffe3; */
+
+    /* color: rgb(0, 255, 0); */
+
+    /* color: rgba(0, 0, 255, 0.3); */
+
+    /* color: hsl(360 100% 50%); */
+
+    /* color: hwb(360 0% 0%); */
+}
