@@ -1,0 +1,37 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+ .container-1{
+    width: 600px;
+    height: 450px;
+    border: 2px solid black;
+    background-image:url("https://rukminim2.flixcart.com/image/850/1000/kwnv6a80/painting/b/s/r/24-1-ms-sp-wp-1824-mp039-masstone-original-imag9ar5bujhrs7p.jpeg?q=90&crop=false");
+    background-size: 600px 450px;
+    background-repeat: no-repeat;
+
+}
+
+/* .container-2{
+    width: 600px;
+    height: 550px;
+    border: 2px solid black;
+    background-image: url("https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/44216/59759/RadhaKrishna05_na_300_673_5600X8268_0__58880.1574082469.jpg?c=2&imbypass=on");
+    background-size: 600px 550px;
+    background-repeat: no-repeat;
+} */
+
+.container-1:hover{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9),rgba(0,0,0,0.6)),url("https://rukminim2.flixcart.com/image/850/1000/kwnv6a80/painting/b/s/r/24-1-ms-sp-wp-1824-mp039-masstone-original-imag9ar5bujhrs7p.jpeg?q=90&crop=false");
+}
