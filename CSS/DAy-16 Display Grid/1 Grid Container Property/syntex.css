@@ -1,0 +1,50 @@
+*,::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid-container{
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    /* gap: 30px; */
+    /* align-content: center ;
+    justify-content: center; */
+    /* place-content: end center ; */
+
+    /* justify-items: center;
+    align-items: center; */
+    /* place-items: center center; */
+
+}
+.item{
+    width: 100px;
+    height: 100px;
+}
+.item-1{
+    background-color: pink;
+}
+.item-2{
+    background-color: orange;
+}
+.item-3{
+    background-color: aqua;
+}
+.item-4{
+    background-color: blueviolet;
+}
+.item-5{
+    background-color: blue;
+}
