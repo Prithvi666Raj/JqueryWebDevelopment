@@ -1,0 +1,58 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#parent{
+    width: 1200px;
+    height: 600px;
+    background-color: lightblue;
+    border: 2px solid black;
+    position: relative;
+}
+
+#parent .child{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation: box 2s linear 0s infinite normal  forwards;
+    animation-play-state: running;
+}
+#parent:hover .child{
+    animation-play-state: paused;    
+}
+
+@keyframes box {
+    0%,100%{
+        top: 0;
+        left: 0;        
+    }
+    25%{
+        top: 0;
+        /* left: 1096.8px; */
+        left: calc(100% - 100px);
+    }
+    50%{
+        top:calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    75%{
+        top:calc(100% - 100px);
+        left: 0;
+    }
+}

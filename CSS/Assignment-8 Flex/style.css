@@ -1,0 +1,46 @@
+*,::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    width: 1100px;
+    height: 600px;
+    background-color: lightblue;
+    border: 2px solid black;
+}
+.parent .child{
+    width: 200px;
+    height: 200px;
+    font-size: 35px;
+}
+.parent .child1{
+    background-color: violet;
+    order: 3;
+}
+.parent .child2 {
+    background-color: yellowgreen;
+    order: 2;
+    align-self: flex-start;
+    flex-basis: 400px;
+}
+.parent .child3 {
+    background-color: tomato;
+    order: 1;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

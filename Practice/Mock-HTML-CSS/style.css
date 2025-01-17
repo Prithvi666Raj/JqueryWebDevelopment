@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*,::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", serif;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    width: 1260px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.container-1{
+    width: 1188px;
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    /* padding: 64px 64px 16px 64px; */
+}
+.container-2{
+    width: 193px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+}
+h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.container-3{
+    width: 1188px;
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    gap: 0 10px;
+    padding-top: 30px;
+}
+.col-1{
+    width: 284px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgb(225, 213, 213);
+}
+.img-1{
+    width: 284px;
+    height: 420px;
+    background-image: url(./Assets/cs-tile-homepage-etex.webp);
+    background-position: top;
+    background-size: 284px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-2{
+    width: 284px;
+    height: 420px;
+    background-image: url(./Assets/H2K1Y0HXAs47zDQN1rIGTwRBfc0.webp);
+    background-position: top;
+    background-size: 284px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-3{
+    width: 284px;
+    height: 420px;
+    background-image: url(./Assets/JmFSeum96SLzvMFy0l45hm4J44M.webp);
+    background-position: top;
+    background-size: 284px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-4{
+    width: 284px;
+    height: 420px;
+    background-image: url(./Assets/unQ58F9NWFHmeilZIvzkMhckA.avif);
+    background-position: top;
+    background-size: 284px 300px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+h2{ 
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.sign{
+    background-color: rgb(0, 153, 255);
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.know{
+    background-color: white;
+    color: rgb(0, 153, 255);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.content-2{
+    opacity: 0;
+    height: 120px;
+    width: 100%;
+    display: none;
+}
+.col-1:hover .content-1 {
+    opacity: 1;
+    z-index: 1;
+    display: inherit;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+.col-1:hover .content-2{
+    opacity: 1;
+    z-index: 1;
+    display: inherit;
+    bottom: 1;
+    transition: all 0.3s ease-in-out;
+}

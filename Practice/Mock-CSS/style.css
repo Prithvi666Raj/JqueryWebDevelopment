@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*,::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", serif;
+}
+#section{
+    width: 100%;
+    height: 933px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* background-image:linear-gradient(to top right,rgba(68, 68, 230, 0.942),rgb(226, 153, 145), rgba(86, 204, 234, 0.871) ); */
+    background:radial-gradient(at 18% 95%, #030060 0, rgba(3, 0, 96, .001) 80%),
+        radial-gradient(at 85% 81%, #0ff 0, rgba(0, 255, 255, .001) 80%),
+        radial-gradient(at 60% 99%, #3afded 10%, rgba(58, 253, 237, .001) 50%),
+        radial-gradient(at 35% 15%, #fbf9e8 0, hsla(54, 70%, 95%, .75) 10%, hsla(54, 70%, 95%, .001) 20%),
+        radial-gradient(at 39% 25%, #fcf7e7 0, hsla(46, 78%, 95%, .75) 30%, hsla(46, 78%, 95%, .001) 60%),
+        radial-gradient(at 2% 2%, #f6d6d8 0, rgba(246, 214, 216, .001) 55%),
+        radial-gradient(at 0 98%, #250075 0, rgba(37, 0, 117, .001) 85%),
+        radial-gradient(at 98% 3%, #0037ad 0, rgba(0, 55, 173, .001) 85%),
+        radial-gradient(at 76% 2%, #0270bb 10%, rgba(2, 112, 187, .001) 60%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 1200px;
+    height: 813px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.containt{
+    width: 1180px;
+    height: 813x;
+}
+.container-1{
+    width: 1180px;
+    height: 122px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.text{
+    width: 1160px;
+    height: 102px;
+}
+h2{
+    color: white;
+    font-size: 47px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.container-2{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1160px;
+    height: 670px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    gap: 20px;
+
+}
+.content-1{
+   background-image:url(./Assets/top-employer-in-india-tile-th-1.jpg);
+   background-position:top;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 2%;
+   position: relative;
+   overflow: hidden;
+}
+
+.content-2 {
+    background-image: url(./Assets/india-office-chennai-tile-2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.content-3 {
+    background-image: url(./Assets/cs-tile-homepage-tyl-natwest.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.content-4 {
+    background-image: url(./Assets/cs-tile-homepage-etex.webp);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.bg-color{
+    height: 50%;
+    width: 100%;
+    background: rgba(0, 0, 72, .6);
+    position: absolute;
+    bottom: 0%;
+    padding: 35px;
+}
+.bg-color .un{
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    padding-bottom: 10px;
+}
+.bg-color h5{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.45rem;
+}
+.bg-color-1{
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    background: rgba(0, 0, 72, .6);
+    padding: 35px;
+    display: none;
+}
+.bg-color-1 .un{
+    font-size: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.bg-color-1 p{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.bg-color-1 h5 {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.45rem;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+a{
+    color: aqua;
+    text-decoration: none;
+}
+.content-1:hover .bg-color {
+    opacity: 0;
+    z-index: 0;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.content-1:hover .bg-color-1 {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    display:inherit;
+    top: 1;
+    transition: all 0.5s ease-in-out;
+}
+.content-2:hover .bg-color {
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-2:hover .bg-color-1 {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    display: inherit;
+    transition: all 0.5s ease-in-out;
+}
+.content-3:hover .bg-color {
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-3:hover .bg-color-1 {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    display: inherit;
+    transition: all 0.5s ease-in-out;
+}
+.content-4:hover .bg-color {
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-4:hover .bg-color-1 {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    display: inherit;
+    transition: all 0.5s ease-in-out;
+}
+button{
+    height: 35px;
+    width: 180px;
+    rotate: 90deg;
+    background-color: #6aa2dc;
+    color: #000048;
+    border: none;
+    border-radius: 0 0 .5rem .5rem;
+    font-weight: 600;
+    margin: 0px;
+    position: fixed;
+    transform-origin: top right;
+    right: 0;
+    top: 56%;
+    font-size: .9rem;
+    z-index: 5;
+}

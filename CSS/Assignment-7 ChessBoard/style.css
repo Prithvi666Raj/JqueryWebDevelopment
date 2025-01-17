@@ -1,0 +1,50 @@
+*,::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+
+}
+.chessboard{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+.chess-box{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    border: 1px solid orange;
+}
+/* .chessboard :nth-child(odd){
+    background-color: white;
+}
+.chessboard :nth-child(even) {
+    background-color: black;
+} */
+.chess-box1,.chess-box3,.chess-box5,.chess-box7,
+.chess-box10,.chess-box12,.chess-box14,.chess-box16,
+.chess-box17,.chess-box19,.chess-box21,.chess-box23,
+.chess-box26,.chess-box28,.chess-box30,.chess-box32,
+.chess-box33,.chess-box35,.chess-box37,.chess-box39,
+.chess-box42,.chess-box44,.chess-box46,.chess-box48,
+.chess-box49,.chess-box51,.chess-box53,.chess-box55,
+.chess-box58,.chess-box60,.chess-box62,.chess-box64
+{
+    background-color: black;
+}
